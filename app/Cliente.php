@@ -2,7 +2,7 @@
 
 namespace App;
 
-use illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 Class Cliente extends Model{
     public $timestamps = false;

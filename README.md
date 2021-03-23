@@ -3,5 +3,5 @@
 
 ## Instalação de dependências
 Ao clonar o repositório, abra a pasta do projeto e execute o comando abaixo
-# composer install
+# -> composer install
  

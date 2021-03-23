@@ -18,6 +18,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->group(['prefix'=>'/api'], function() use($router){
-    $router->get('/clientes', 'ClientesController@index');
+$router->group(['prefix'=>'api'], function() use($router){
+    $router->get('clientes', 'ClientesController@index');
+    $router->get('clientes/{id}', 'ClientesController@index');
+    $router->post('clientes', 'ClientesController@store');
 });
