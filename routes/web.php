@@ -20,6 +20,8 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix'=>'api'], function() use($router){
     $router->get('clientes', 'ClientesController@index');
-    $router->get('clientes/{id}', 'ClientesController@index');
+    $router->get('clientes/{id}', 'ClientesController@show');
     $router->post('clientes', 'ClientesController@store');
+    $router->put('clientes/{id}', 'ClientesController@update');
+    $router->delete('clientes/{id}', 'ClientesController@destroy');
 });
